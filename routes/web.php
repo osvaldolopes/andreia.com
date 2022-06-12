@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/listagem-usuario', [UserController::class, 'listUser']);
+//Route::get('/home/{user}', [\App\Http\Controllers\HomeController::class, 'show']);
 
+// Route::get('/request', function (\Illuminate\Http\Request $request) {
+//     $r = $request->();
+//     dd($r);
+//     return 'x';
+// });
+
+// Route::get('/user/{user}', [\App\Http\Controllers\UserController::class, 'show']);
+
+// //Route::get('/user', [UseController::class, 'listUsers']);
+
+// Route::get('/users/{id}', function ($id) {
+//     return $id;
+// });
+
+// Route::get('/usuario/{user}', function (\App\Models\User $user) {
+//     dd($user);
+//     return $user;
+// });
