@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +15,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/products', [ProductsController::class, 'products']);
 
 //Route::get('/home/{user}', [\App\Http\Controllers\HomeController::class, 'show']);
 
