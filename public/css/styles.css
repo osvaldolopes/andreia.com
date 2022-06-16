@@ -11406,6 +11406,7 @@ p {
   }
 }
 header.masthead {
+  height: 120px;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -11417,10 +11418,11 @@ header.masthead {
   background-size: cover;
 }
 header.masthead .masthead-subheading {
+  margin-top: -5%;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -11700,16 +11702,16 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.rede-member {
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
+.rede-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
-.team-member h4, .team-member .h4 {
+.rede-member h4, .rede-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
