@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
- <!-- Product Grid-->
+ <!--PRODUTOS PARA COMPRA-->
     <section class="page-section bg-light" id="products">
         <div class="container">
             <div class="text-center">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-<!-- Product Modals-->
+<!--LISTA DE PRODUTOS-->
     <!-- Product item 1 modal popup-->
     <div class="products-modal modal fade" id="productsModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -381,8 +381,8 @@
             </div>
         </div>
     </section>   
-    <!-- About-->
-    <section class="page-section" id="about">
+    <!-- COMO COMPRAR OS PRODUTOS-->
+    <section class="page-section" id="compras">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Como Comprar</h2>
@@ -452,18 +452,18 @@
                 <li class="timeline-inverted">
                     <div class="timeline-image">
                         <h4>
-                            Be Part
+                            Aguarde
                             <br />
-                            Of Our
+                            o seu
                             <br />
-                            Story!
+                            Produto!
                         </h4>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-    <!-- rede-->
+    <!--MINHAS REDES SOCIAIS-->
     <section class="page-section bg-light" id="redes">
         <div class="container">
             <div class="text-center">
@@ -476,8 +476,8 @@
                         <img class="mx-auto rounded-circle" src="assets/img/rede/1.jpg" alt="..." />
                         <h4>Instagram</h4>
                         <p class="text-muted">instagram.com/andreiakeri</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i
-                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/andreiakeri/" aria-label="Parveen Anand Twitter Profile"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -485,7 +485,7 @@
                         <img class="mx-auto rounded-circle" src="assets/img/rede/2.jpg" alt="..." />
                         <h4>Facebook</h4>
                         <p class="text-muted">facebook.com/andreia.borgeskeri</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/andreia.borgeskeri" aria-label="Diana Petersen Twitter Profile"><i
                                 class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
@@ -494,8 +494,8 @@
                         <img class="mx-auto rounded-circle" src="assets/img/rede/3.jpg" alt="..." />
                         <h4>You tube</h4>
                         <p class="text-muted">youtube.com/andreiakeri</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
-                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/andreiakeri" aria-label="Larry Parker Twitter Profile"><i
+                                class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="row">
@@ -507,73 +507,45 @@
         </div>
     </section>
 
-    <!-- Contact-->
+    <!--CONTATO DIRECIONADO PARA O EMAIL-->
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contato</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Envie sua sugestão ou duvida que reponderei o mais breve possivel.</h3>
             </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form id="contactForm" action="#contact" method="get">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
                             <!-- Name input-->
                             <input class="form-control" id="name" type="text" placeholder="Seu Nome *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">O nome requerido.</div>
+                                data-sb-validations="required" />                           
                         </div>
                         <div class="form-group">
                             <!-- Email address input-->
                             <input class="form-control" id="email" type="email" placeholder="Seu Email *"
                                 data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">O email requerido.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email não é valido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">O email requerido.</div>                            
                         </div>
                         <div class="form-group mb-md-0">
                             <!-- Phone number input-->
                             <input class="form-control" id="phone" type="tel" placeholder="Seu Celular *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">Celular requerido.
-                            </div>
+                                data-sb-validations="required" />                            
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
                             <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Sua Mensagem *" data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <textarea class="form-control" id="message" placeholder="Sua Mensagem *" data-sb-validations="required"></textarea>                           
                         </div>
                     </div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">Envio de formulário bem-sucedido!</div>                   
-                        <br />
-                        <a
-                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
+                </div>>
                 <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                    <div class="text-center text-danger mb-3">Error ao enviar mensagem!</div>
                 </div>
                 <!-- Submit Button-->
-                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase"
                         id="submitButton" type="submit">Enviar</button></div>
             </form>
         </div>
