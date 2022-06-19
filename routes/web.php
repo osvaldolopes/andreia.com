@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\PrivacyController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +17,14 @@ use App\Http\Controllers\PrivacyController;
 |
 */
 
+//PAGINAS DO SITE | PASTA LAYOULT
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/products', [ProductsController::class, 'products']);
 Route::get('/privacy', [PrivacyController::class, 'privacy']);
+
+//PAINEL DE CONTROLE | PASTA ADMIN
+Route::get('/login', [LoginController::class, 'login']);
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 
 //Route::get('/home/{user}', [\App\Http\Controllers\HomeController::class, 'show']);
 // Route::get('/request', function (\Illuminate\Http\Request $request) {

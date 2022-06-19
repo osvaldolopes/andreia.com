@@ -8,6 +8,6 @@ class ProductsController extends Controller
 {
     public function products()
     {
-        return view('\layouts\products');
+        return view('/layouts/products');
     }
 }
