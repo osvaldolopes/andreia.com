@@ -3,11 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Products;
 
 class ProductsController extends Controller
 {
-    public function products()
+    public function blusas()
     {
-        return view('/layouts/products');
+        $products = Products::all();        
+        return view('layouts.products', ['products' => $products]);
+    }
+
+    public function blazers()
+    {
+        $products = Products::all();        
+        return view('layouts.products', ['products' => $products]);
     }
 }
