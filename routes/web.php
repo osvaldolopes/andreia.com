@@ -19,11 +19,17 @@ use App\Http\Controllers\DashboardController;
 */
 
 //PAGINAS DO SITE | PASTA LAYOULT
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/products', [ProductsController::class, 'blusas']);
-Route::get('/products', [ProductsController::class, 'blazers']);
-Route::get('/privacy', [PrivacyController::class, 'privacy']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/privacy/policy', [PrivacyController::class, 'privacy'])->name('privacy.policy');
+//PRODUCTS
+       //O QUE E DIGITADO NA URI        CLASSE CONTROLE                     NOME DA ROTA   
+Route::get('/products/blusas', [ProductsController::class, 'blusas'])->name('products.blusas');
+Route::get('/products/blazers', [ProductsController::class, 'blazers'])->name('products.blazers');
+Route::get('/products/bolsas', [ProductsController::class, 'bolsas'])->name('products.bolsas');
+Route::get('/products/calcas', [ProductsController::class, 'calcas'])->name('products.calcas');
+Route::get('/products/vestidos', [ProductsController::class, 'vestidos'])->name('products.vestidos');
+Route::get('/products/academia', [ProductsController::class, 'academia'])->name('products.academia');
 
 //PAINEL DE CONTROLE | PASTA ADMIN
-Route::get('/login', [LoginController::class, 'login']);
-Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');

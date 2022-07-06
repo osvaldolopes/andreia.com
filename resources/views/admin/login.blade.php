@@ -56,7 +56,6 @@
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-dark text-decoration-none me-3" href="privacy"><i class="fas fa-lock"></i> Termos de
                         Privacidade</a>
-
                 </div>
             </div>
         </div>

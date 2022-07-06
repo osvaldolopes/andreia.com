@@ -1,11 +1,10 @@
 @extends('layouts.default')
 @section('content')
-    {{-- {{ dd($products); }} --}}
     <!--PRODUTOS PARA COMPRA POR TIPO-->
     <section class="page-section bg-light" id="products">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Produtos</h2>
+            <div class="text-center">                   
+                    <h2 class="section-heading text-uppercase"> {{ $prod->category }}</h2> 
                 <h3 class="section-subheading text-muted">Produtos usados, o frete por conta do cliente.</h3>
             </div>
             <div class="row">
@@ -17,7 +16,7 @@
                                 <div class="products-hover">
                                     <div class="products-hover-content"><i class="fab fa-sistrix fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/products/1.jpg" alt="..." />
+                                <img class="img-fluid" src="{{ $product->cover }}" alt="Imagem do produto" />
                             </a>
                             <div class="products-caption">
                                 <div class="products-caption-heading">R$ {{ $product->price }}</div>
@@ -33,7 +32,7 @@
                         role="dialog" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                                <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg"
                                         alt="Close modal" />
                                 </div>
                                 <div class="container">
@@ -42,9 +41,9 @@
                                             <div class="modal-body">
                                                 <!-- Project details-->
                                                 <h2 class="text-uppercase"> {{ $product->name }}</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-fluid d-block mx-auto" src="assets/img/products/1.jpg"
-                                                    alt="..." />
+                                                <p class="item-intro text-muted">R$ {{ $product->price }}</p>
+                                                <img class="img-fluid d-block mx-auto" src="{{ $product->cover }}"
+                                                    alt="Imagem do produto" />
                                                 <p> {{ $product->description }} </p>
                                                 <ul class="list-inline">
                                                     <li>
