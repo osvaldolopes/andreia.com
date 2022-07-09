@@ -4,7 +4,7 @@
     <section class="page-section bg-light" id="products">
         <div class="container">
             <div class="text-center">                   
-                    <h2 class="section-heading text-uppercase"> {{ $prod->category }}</h2> 
+                    <h2 class="section-heading text-uppercase">{{ $prod->category }}</h2> 
                 <h3 class="section-subheading text-muted">Produtos usados, o frete por conta do cliente.</h3>
             </div>
             <div class="row">

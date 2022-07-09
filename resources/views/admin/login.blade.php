@@ -12,12 +12,10 @@
 <body>
     <section id="contact">
         <form id="contactForm" action="dashboard" method="get">
-            <div class="row h2">
-                <p>PAINEL DE CONTROLE</p>
-            </div><br>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-lg-5">
+                    <p class="h2">PAINEL DE CONTROLE</p><br>
                     <div class="form-group">
                         <!--EMAIL DO USUARIO CADASTRADO-->
                         <input class="form-control" id="email" type="email" placeholder="Seu Email"
