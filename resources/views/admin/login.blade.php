@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="../public/css/styles.css" rel="stylesheet" />
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
 </head>
 
 <body>
     <section id="contact">
-        <form id="contactForm" action="dashboard" method="get">
+        <form id="contactForm" action="{{ route('do') }}" method="post">
+            @csrf
             <div class="row">
                 <div class="col"></div>
                 <div class="col-lg-5">
                     <p class="h2">PAINEL DE CONTROLE</p><br>
                     <div class="form-group">
                         <!--EMAIL DO USUARIO CADASTRADO-->
-                        <input class="form-control" id="email" type="email" placeholder="Seu Email"
+                        <input class="form-control" name="email" id="email" value="dico.sistem@gmail.com" type="email" placeholder="Seu Email"
                             data-sb-validations="required,email" />
                     </div>
                     <div class="form-group">
                         <!--SENHA DO USUARIO CADASTRADO-->
-                        <input class="form-control" id="senha" type="password" placeholder="Senha"
+                        <input class="form-control" name="password" id="password" type="password" placeholder="Senha"
                             data-sb-validations="required" />
                     </div>
                 </div>

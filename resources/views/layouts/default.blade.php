@@ -34,6 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="../#compras">Comprar</a></li>
                     <li class="nav-item"><a class="nav-link" href="../#redes">Redes Sociais</a></li>
                     <li class="nav-item"><a class="nav-link" href="../#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link">|</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
                 </ul>
             </div>

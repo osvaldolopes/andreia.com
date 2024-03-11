@@ -36,6 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="#compras">Comprar</a></li>
                     <li class="nav-item"><a class="nav-link" href="#redes">Redes Sociais</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link">|</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-1x"></i></a></li>
                 </ul>
             </div>
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                     <!--CALÇAS-->
                     <div class="products-item">
@@ -208,19 +209,19 @@
                     <h4 class="my-3">RENNER</h4>
                     <p class="text-muted">Com a RENNER você pode fazer as suas compras e garantir 10% de desconto
                         inserindo
-                        <b>ANDREIAKERI</b> no campo parceira.
+                        <b>INFLU</b> no campo parceira.
                     </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <a target="_blank" href="https://shopee.com.br/lovito.br/"><i
+                        <a target="_blank" href="https://rchlo.love/andreiakeri"><i
                                 class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-users fa-stack-1x fa-inverse"></i></a>
                     </span>
-                    <h4 class="my-3">LOVITO</h4>
-                    <p class="text-muted">Com a LOVITO você pode fazer as suas compras e garantir 10% de desconto
+                    <h4 class="my-3">RIACHUELO</h4>
+                    <p class="text-muted">Com a RIACHUELO você pode fazer as suas compras e garantir 10% de desconto
                         inserindo
-                        <b>ANDREIAKERI</b> no campo parceira.
+                        <b>RCHLO320563AFL</b> no campo parceira.
                     </p>
                 </div>
             </div>

@@ -31,5 +31,6 @@ Route::get('/products/vestidos', [ProductsController::class, 'vestidos'])->name(
 Route::get('/products/academia', [ProductsController::class, 'academia'])->name('products.academia');
 
 //PAINEL DE CONTROLE | PASTA ADMIN
-Route::get('/login', [LoginController::class, 'login'])->name('login');
-Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/login', [DashboardController::class, 'dashboard'])->name('login');
+Route::get('/dashboard', [DashboardController::class, 'login'])->name('dashboard');
+Route::post('/do', [DashboardController::class, 'do'])->name('do');
